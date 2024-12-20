@@ -4,6 +4,12 @@
   padding: 2rem;
   text-align: center;
 }
+/* Global CSS (e.g., App.css or index.css) */
+body > * {
+  padding-top: 80px; /* Adjust based on your navbar height */
+  scroll-margin-top: 80px;
+}
+
 
 .logo {
   height: 6em;

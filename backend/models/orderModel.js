@@ -7,7 +7,8 @@ const orderSchema = new mongoose.Schema({
     address:{type:Object,required:true},
     status:{type:String,default:"Food Processing"},
     date:{type:Date,default:Date.now()},
-    payemnt:{type:Boolean,default:false}
+    payment:{type:Boolean,default:false},
+    razorpayOrderId: { type: String }, // Store Razorpay order ID
 })
 
 const orderModel = mongoose.models.order || mongoose.model("order",orderSchema)

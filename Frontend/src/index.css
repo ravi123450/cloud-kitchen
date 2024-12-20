@@ -6,8 +6,16 @@
   font-family: Outfit;
   scroll-behavior: smooth;
 }
+/* Global CSS (e.g., App.css or index.css) */
+body > * {
+  padding-top: 10px; /* Adjust based on your navbar height */
+  scroll-margin-top: 80px;
+}
+
 body{
   min-height: 100vh;
+  background-color: #F4F4F4;
+
 }
 a{
   text-decoration: none;
@@ -16,6 +24,7 @@ a{
 .app{
   width: 80%;
   margin: auto;
+  padding-top: 200px;
 }
 
 @keyframes fadeIn {

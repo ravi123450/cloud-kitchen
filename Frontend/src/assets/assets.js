@@ -59,6 +59,13 @@ import profile_icon from './profile_icon.png'
 import bag_icon from './bag_icon.png'
 import logout_icon from './logout_icon.png'
 import parcel_icon from './parcel_icon.png'
+import subscriptions_icon from './subscriptions_icon.png'
+import gym from './gym .jpg'
+import image from './image.png'
+import nut from './nut.png'
+import del from './del.png'
+import fresh from './fresh.jpeg'
+import pres from './pres.jpeg'
 
 export const assets = {
     logo,
@@ -79,28 +86,36 @@ export const assets = {
     profile_icon,
     logout_icon,
     bag_icon,
-    parcel_icon
+    parcel_icon,
+    subscriptions_icon,
+    gym,
+    image,
+    nut,
+    del,
+    fresh,
+    pres
+
 }
 
 export const menu_list = [
     {
-        menu_name: "Salad",
+        menu_name: "Weight Loss",
         menu_image: menu_1
     },
     {
-        menu_name: "Rolls",
+        menu_name: "Weight Gain",
         menu_image: menu_2
     },
     {
-        menu_name: "Deserts",
+        menu_name: "Healthy Diet",
         menu_image: menu_3
     },
     {
-        menu_name: "Sandwich",
+        menu_name: "Custom Food",
         menu_image: menu_4
     },
     {
-        menu_name: "Cake",
+        menu_name: "High Protein",
         menu_image: menu_5
     },
     {
@@ -108,13 +123,15 @@ export const menu_list = [
         menu_image: menu_6
     },
     {
-        menu_name: "Pasta",
+        menu_name: "Low Carb",
         menu_image: menu_7
     },
     {
-        menu_name: "Noodles",
+        menu_name: "Noodles & Pasta",
         menu_image: menu_8
-    }]
+    }
+];
+
 
 export const food_list = [
     {

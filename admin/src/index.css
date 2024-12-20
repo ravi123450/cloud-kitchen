@@ -8,8 +8,9 @@
 }
 
 body{
-  min-height: 100vh;
-  background-color: #fcfcfc;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a{
@@ -24,6 +25,7 @@ hr{
 }
 
 .app-content{
+  margin-top: 70px; /* Push content below the navbar height */
   display: flex;
 }
 

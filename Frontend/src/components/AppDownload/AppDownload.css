@@ -3,6 +3,7 @@
     margin-top: 100px;
     font-size: max(3vw,20px);
     text-align: center;
+    scroll-margin-top: 135px;
 }
 .app-download-platforms{
     display: flex;

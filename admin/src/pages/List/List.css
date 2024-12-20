@@ -1,25 +1,49 @@
-.list-table-format{
+.list-table-format {
     display: grid;
-    grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr; /* Layout remains consistent */
     align-items: center;
-    gap: 10px;
-    padding: 12px 15px;
-    border: 1px solid #cacaca;
-    font-size: 13px;
-}
-.list-table-format.title{
-    background-color: #f9f9f9;
-}
-.list-table-format img{
-    width: 50px;
+    gap: 12px; /* Slightly larger gap for breathing space */
+    padding: 14px 18px; /* Increase padding for better readability */
+    border: 1px solid #e0e0e0; /* Subtle border color */
+    border-radius: 6px; /* Rounded edges for a modern feel */
+    font-size: 14px; /* Slightly larger font size for clarity */
+    background-color: white; /* Neutral background for better readability */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+    transition: all 0.3s ease; /* Smooth hover effect */
 }
 
-@media (max-width:600px) {
-    .list-table-format{
-        grid-template-columns: 1fr 3fr 1fr;
-        gap: 15px;
+.list-table-format:hover {
+    background-color: #f5faff; /* Light blue hover effect */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Slightly more pronounced shadow */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.list-table-format.title {
+    background-color: #007BFF; /* Vibrant blue for titles */
+    color: white; /* White text for contrast */
+    font-weight: bold;
+    text-align: center;
+    border: none; /* Remove border for title row */
+    box-shadow: none; /* No shadow for title row */
+    padding: 16px 20px; /* Slightly larger padding */
+    border-radius: 6px; /* Match row style */
+}
+
+.list-table-format img {
+    width: 50px; /* Consistent image size */
+    height: 50px; /* Maintain aspect ratio */
+    border-radius: 4px; /* Rounded image corners */
+    object-fit: cover; /* Ensure image fits well */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
+}
+
+@media (max-width: 600px) {
+    .list-table-format {
+        grid-template-columns: 1fr 2fr 1fr; /* Adjust grid layout for smaller screens */
+        gap: 10px; /* Reduce gap for compact layout */
+        padding: 10px 12px; /* Compact padding */
     }
-    .list-table-format.title{
-        display: none;
+    .list-table-format.title {
+        display: none; /* Hide title row on small screens */
     }
 }

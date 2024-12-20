@@ -5,6 +5,7 @@ import validator from "validator"
 
 
 
+
 // login user
 const loginUser = async (req,res) => {
     const {email,password} = req.body;
@@ -73,4 +74,34 @@ const registerUser = async (req,res) => {
     }
 }
 
-export {loginUser,registerUser}
+const getAllUsers = async (req, res) => {
+    try {
+        // Fetch all user details
+        const users = await userModel.find({}, { password: 0 }); // Exclude the password field for security
+
+        res.status(200).json({ success: true, users });
+    } catch (error) {
+        console.error("Error fetching users:", error.message);
+        res.status(500).json({ success: false, message: "Failed to fetch users" });
+    }
+};
+const getUserById = async (req, res) => {
+    const { id } = req.params; // Extract the user ID from the request parameters
+    try {
+        // Find user by ID
+        const user = await userModel.findById(id, { password: 0 }); // Exclude the password field for security
+
+        if (!user) {
+            return res.status(404).json({ success: false, message: "User not found" });
+        }
+
+        res.status(200).json({ success: true, user });
+    } catch (error) {
+        console.error("Error fetching user by ID:", error.message);
+        res.status(500).json({ success: false, message: "Failed to fetch user by ID" });
+    }
+};
+
+export { loginUser, registerUser, getAllUsers, getUserById };
+
+

@@ -1,0 +1,99 @@
+.diet-plan-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 40px 0;
+}
+
+.scroll-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    position: absolute;
+    z-index: 10;
+}
+
+.scroll-btn:hover {
+    background-color: #218838;
+}
+
+.scroll-btn.left {
+    left: 10px;
+}
+
+.scroll-btn.right {
+    right: 10px;
+}
+
+.diet-plan-container {
+    display: flex;
+    align-items: center; /* Vertically center everything */
+    justify-content: space-between; /* Space between text and image */
+    background-color: #f0f8ff; /* Light blue background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 3rem; /* Padding for overall spacing */
+    width: 90%;
+    max-width: 1200px;
+    margin: auto; /* Center the container horizontally */
+    box-sizing: border-box;
+}
+
+.diet-plan-content {
+    flex: 1; /* Takes up 50% width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem; /* Adds spacing between text and button */
+}
+
+.diet-plan-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.diet-plan-content p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #555;
+    margin: 0;
+}
+
+.diet-plan-btn {
+    background-color: #000; /* Black button */
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+}
+
+.diet-plan-btn:hover {
+    background-color: #333;
+}
+
+.diet-plan-image {
+    flex: 1; /* Takes up 50% width */
+    display: flex;
+    justify-content: flex-end; /* Push the image to the right edge */
+    align-items: center; /* Vertically center the image */
+}
+
+.diet-plan-image img {
+    height: 100%; /* Make image fill container height */
+    max-height: 300px; /* Fixed max height for image */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Scale the image properly */
+    border-radius: 10px;
+}

@@ -1,13 +1,25 @@
-.navbar{
+/* Navbar.css */
+.navbar {
+    position: fixed; /* Keep navbar fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px; /* Adjust height to match your navbar */
+    background-color: #007BFF; /* Example background color */
+    color: white;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 8px 4%;
-}
-.navbar .logo{
-    width: max(10%,80px);
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it's above other content */
 }
 
-.navbar .profile{
-    width: 40px;
+.navbar .logo {
+    height: 50px; /* Adjust logo size */
+}
+
+.navbar .profile {
+    height: 40px; /* Profile picture size */
+    border-radius: 50%;
 }

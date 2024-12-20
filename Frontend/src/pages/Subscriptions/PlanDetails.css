@@ -1,0 +1,102 @@
+.plan-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f9fafc;
+    min-height: 100vh;
+}
+
+.plan-details-card {
+    display: flex;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 70%;
+}
+
+.plan-image img {
+    width: 100%;
+    height: auto;
+}
+
+.plan-info {
+    padding: 2rem;
+    flex: 1;
+}
+
+.plan-info h1 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 1rem;
+}
+
+.plan-info p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 1.5rem;
+}
+
+.plan-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem; /* Improved spacing */
+    align-items: center; /* Center-align the button and fields */
+}
+
+.plan-options select,
+.plan-options input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%; /* Full width for better alignment */
+}
+
+.total-cost {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.buy-now-btn {
+    background-color: #007bff; /* Primary Blue */
+    color: #fff;
+    border: none;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    width: 100%; /* Stretch to full width for better appearance */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+.buy-now-btn:hover {
+    background-color: #0056b3; /* Darker Blue */
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
+    transform: translateY(-3px);
+}
+
+.buy-now-btn:active {
+    transform: translateY(1px); /* Slight push effect */
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
+}
+
+.loading, .error {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #e74c3c;
+}
+
+.stamp-logo img {
+    max-width: 80px; /* Adjust stamp logo size */
+    height: auto;
+    margin: 1rem auto;
+    display: block;
+}
