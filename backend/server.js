@@ -23,7 +23,7 @@ app.use(cors());
 
 
 // db connection
-connectDB();
+mongoose.connect("mongodb+srv://merakanapalliraviteja86:wejhTlHwGGgPMXbn@cluster0.q7okber.mongodb.net/cloud")
 
 // api endpoints
 app.use("/api/food", foodRouter);
