@@ -16,4 +16,4 @@ export const assets ={
     home_icon
 }
 
-export const url = 'http://localhost:4000'
+export const url = 'https://cloud-kitchen-6.onrender.com'
