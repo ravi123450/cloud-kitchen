@@ -9,7 +9,7 @@ const AdminSubscriptions = () => {
     const [selectedUser, setSelectedUser] = useState(null); // State for selected user details
     const [showModal, setShowModal] = useState(false); // State to toggle modal visibility
 
-    const url = "https://cloud-kitchen-9.onrender.com/";
+    const url = "https://cloud-kitchen-9.onrender.com";
 
     useEffect(() => {
         const fetchSubscriptions = async () => {
