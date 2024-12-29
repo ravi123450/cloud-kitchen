@@ -10,7 +10,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
-  const url = "https://cloud-kitchen-9.onrender.com";
+  const url = "https://cloud-kitchen-6.onrender.com";
 
   return (
     <div>
